@@ -5,11 +5,11 @@
 	<modelVersion>4.0.0</modelVersion>
 
 	<groupId>com.fis</groupId>
-	<artifactId>oauth</artifactId>
+	<artifactId>disasterMngtAPI</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<packaging>jar</packaging>
 
-	<name>oauth</name>
+	<name>disasterMngtAPI</name>
 	<description>Demo project for Spring Boot</description>
 
 	<parent>
