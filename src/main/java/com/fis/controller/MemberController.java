@@ -9,15 +9,15 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.fis.model.User;
-import com.fis.service.impl.UserServiceImpl;
+import com.fis.model.Member;
+import com.fis.service.impl.MemberServiceImpl;
 
 @RestController
 @RequestMapping("/users")
-public class UserController {
+public class MemberController {
 
     @Autowired
-    private UserServiceImpl userService;
+    private MemberServiceImpl userService;
 
     @RequestMapping(value="/user", method = RequestMethod.GET)
     public List listUser(){
@@ -25,7 +25,7 @@ public class UserController {
     }
 
     @RequestMapping(value = "/user", method = RequestMethod.POST)
-    public User create(@RequestBody User user){
+    public Member create(@RequestBody Member user){
         return userService.save(user);
     }
 

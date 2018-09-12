@@ -7,7 +7,7 @@ import java.util.Date;
 import javax.persistence.*;
 
 @Entity
-public class User {
+public class Member {
 
     @Id
     @GeneratedValue(strategy= GenerationType.AUTO)
